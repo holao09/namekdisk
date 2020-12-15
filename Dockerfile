@@ -23,3 +23,4 @@ RUN mkdir -p /NamekDisk && cd /NamekDisk && \
 EXPOSE 8080
 
 CMD ["mono", "/NamekDisk/wdmrc.exe --protocol=YadWeb --port=8080 --host=http://* "]
+
