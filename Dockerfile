@@ -21,6 +21,6 @@ RUN mkdir -p /NamekDisk && cd /NamekDisk && \
   unzip WebDAVCloudMailRu-1.13.1.1-dotNet48.zip && ls -l /NamekDisk
   
 EXPOSE 8080
-
-CMD ["mono", "/NamekDisk/wdmrc.exe --protocol=YadWeb --port=8080 --host=http://* "]
+WORKDIR /NamekDisk
+CMD ["/usr/bin/mono", "wdmrc.exe", "--protocol=YadWeb", "--port=8080", "--host=http://* "]
 
