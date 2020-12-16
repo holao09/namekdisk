@@ -18,7 +18,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
     
 RUN mkdir -p /NamekDisk && cd /NamekDisk && \
   wget https://github.com/yar229/WebDavMailRuCloud/releases/download/1.13.1.1/WebDAVCloudMailRu-1.13.1.1-dotNet48.zip && \
-  unzip WebDAVCloudMailRu-1.13.1.1-dotNet48.zip
+  unzip WebDAVCloudMailRu-1.13.1.1-dotNet48.zip && ls -l /NamekDisk
   
 EXPOSE 8080
 
