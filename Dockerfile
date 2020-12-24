@@ -22,5 +22,6 @@ RUN mkdir -p /NamekDisk && cd /NamekDisk && \
   
 EXPOSE 8080
 WORKDIR /NamekDisk
-CMD ["cd /NamekDisk;/usr/bin/mono  wdmrc.exe --protocol=YadWeb --port=8080 --host=http://* "]
+ENTRYPOINT ["/usr/bin/mono"]
+CMD ["wdmrc.exe --protocol=YadWeb --port=8080 --host=http://* "]
 
