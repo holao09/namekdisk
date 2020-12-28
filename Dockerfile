@@ -1,4 +1,4 @@
-FROM amd64/mono:lastest
+FROM amd64/mono:latest
 MAINTAINER Viet Nguyen "<mrholao09@gmail.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 
